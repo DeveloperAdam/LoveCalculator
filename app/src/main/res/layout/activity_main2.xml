@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context="com.techease.lovecalculator.Main2Activity">
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView2ndScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/Banner_2nd_screen">
+    </com.google.android.gms.ads.AdView>
+    <TextView
+        android:id="@+id/tvvvv"
+        android:layout_below="@id/adView2ndScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Love Calculator"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:layout_centerInParent="true"
+        android:textStyle="bold"
+        android:layout_marginTop="20sp"/>
+
+    <TextView
+        android:id="@+id/tvvv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvvvv"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10sp"
+        android:text="Find the love percentage with your lover"
+        android:textColor="#fff"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_below="@+id/tvvvv"
+        android:layout_marginTop="50sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/white"
+        android:hint="Your Name"
+        android:paddingLeft="20sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="@color/colorPrimaryDark" />
+
+    <EditText
+        android:id="@+id/etLover"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/etName"
+        android:layout_marginTop="26dp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:background="@drawable/white"
+        android:hint="Lover Name"
+        android:paddingLeft="15sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="@color/colorPrimaryDark" />
+
+    <Button
+        android:id="@+id/btnFind"
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+        android:layout_above="@+id/adView2ndScreen2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="52dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Find"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView2ndScreen2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/Banner_2nd_screen_bottom"></com.google.android.gms.ads.AdView>
+
+</RelativeLayout>
